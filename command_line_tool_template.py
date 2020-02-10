@@ -31,6 +31,10 @@ if __name__ == '__main__':
   parser.add_argument("-b", "--bArray", nargs='+', type=int,
                       help = "pass ARG to the program",
                       metavar = "ARG")
+  parser.add_argument("-v",
+                      "--verbose",
+                      help="increase output verbosity",
+                      action="store_true")
   args = parser.parse_args()
 
   # Setup logging
